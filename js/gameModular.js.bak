@@ -1,0 +1,10 @@
+requirejs.config({
+	baseUrl: 'js/lib',
+	paths:{
+		util:'../utils'
+	}
+});
+
+requirejs(['jquery-3.2.1.min','pixi.min','js/utils/helper.js'],function($,PIXI) {
+	PIXI.utils.sayHello();
+});

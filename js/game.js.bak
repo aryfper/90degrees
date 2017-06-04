@@ -1,0 +1,26 @@
+/* Game.js
+ * 
+ * Main Game file
+ */
+
+//PIXI.utils.skipHello();
+
+loader
+	.add("test","lain/bayu.png")
+	.add("rocket","assets/rocket.png")
+	.load(setup);
+let app,
+	state,
+	sprites={},
+	scenes={};
+
+function setup(loader,resources) {
+	app=new Application({
+		width:360,
+		height:640,
+		view:$("#mycanvas")[0],
+		antialias:true,
+		transparent:false
+	});
+
+}
